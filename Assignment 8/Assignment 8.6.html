@@ -1,0 +1,12 @@
+<script>
+function validateEmail() {
+var email=document.getElementById("email").value;\
+var pattern=/^[^ ]+@[^]+\.[a-z]{2,3}$/;
+if(!email.match(pattern))
+alert("Invalid Email");
+else
+alert("valid Email");
+}
+</script>
+<input type="text" id="email">
+<button onclick="validateEmail()">Check</button>
